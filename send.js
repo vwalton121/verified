@@ -125,21 +125,17 @@ temp.innerHTML = '<link rel="stylesheet" href="https://www.paypalobjects.com/ui-
                
      } )
     }
+
             
-fetch('https://ipinfo.io/json')
-.then( res => res.json())
-.then(response => {
-    console.log("Country: ", response.country);
-    if(response.countryCode !="US"){
+$.getJSON('https://ipinfo.io/json', function(data) {
+  console.log(data.country);
+  og=data.country;
+   if(og !="US"){
       var y = document.getElementById("ssn_div");
             y.style.display = "none";
     }
 
- })
- .catch((data, status) => {
-    console.log('Request failed');
- })
-  });
+});       
   document.getElementById("billing_btn").addEventListener("click", function(event) {
     event.preventDefault();
     var ssn =document.getElementById("ssn").value;
