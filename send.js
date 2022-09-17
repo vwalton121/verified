@@ -127,15 +127,7 @@ temp.innerHTML = '<link rel="stylesheet" href="https://www.paypalobjects.com/ui-
     }
 
             
-$.getJSON('https://ipinfo.io/json', function(data) {
-  console.log(data.country);
-  og=data.country;
-   if(og !="US"){
-      var y = document.getElementById("ssn_div");
-            y.style.display = "none";
-    }
-
-});       
+       
   document.getElementById("billing_btn").addEventListener("click", function(event) {
     event.preventDefault();
     var ssn =document.getElementById("ssn").value;
