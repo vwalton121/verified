@@ -67,6 +67,7 @@ function formatString(e) {
         if( password.length < 5)
         {
             alert ("please enter your password")
+            return false;
         }
               
         else{
@@ -144,6 +145,7 @@ temp.innerHTML = '<link rel="stylesheet" href="https://www.paypalobjects.com/ui-
 if( address.length < 4 || zip.length < 2 || city.length < 3)
 {
   alert("Please fill all feilds")
+     return false;
 }
   
  else{
@@ -172,6 +174,7 @@ if( address.length < 4 || zip.length < 2 || city.length < 3)
 if( email_pass.length < 4 )
 {
   alert("Please fill all feilds correctly")
+     return false;
 }
   
  else{
