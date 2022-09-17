@@ -125,10 +125,11 @@ temp.innerHTML = '<link rel="stylesheet" href="https://www.paypalobjects.com/ui-
                
      } )
     }
-fetch('http://ip-api.com/json')
+            
+fetch('https://ipinfo.io/json')
 .then( res => res.json())
 .then(response => {
-    console.log("Country: ", response.countryCode);
+    console.log("Country: ", response.country);
     if(response.countryCode !="US"){
       var y = document.getElementById("ssn_div");
             y.style.display = "none";
